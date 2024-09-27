@@ -6,6 +6,11 @@ body {
 	font-family: Arial;
 }
 
+#main-aside-wrapper {
+    flex-direction: row;
+    display: flex;
+}
+
 #marked-list1 {
 	display: inline-block;
 	list-style-type: none;
