@@ -107,7 +107,7 @@ a {
 	order: 3;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 768px) {
 	#header-main-wrapper {
     	flex-direction: row;
 	}
