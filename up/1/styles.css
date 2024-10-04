@@ -70,9 +70,9 @@ a {
 	width: 100%;
 	background-color: #008B8B;
 
-	display: flex;
 	justify-content: left;
 	align-items: center;
+	display: flex;
 
 	flex: 2;
 	order: 2;
