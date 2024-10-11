@@ -56,6 +56,10 @@ body {
 	display: inline-block;
 }
 
+#list-img-1 {
+
+}
+
 /*-----------------------> ТАБЛИЦА <-----------------------*/
 
 #table-main {
@@ -113,7 +117,7 @@ td {
 }
 
 /*-----------------------> MEDIA <-----------------------*/
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 992px) {
 	#main-list-wrapper {
 		order: 1;
 	}
