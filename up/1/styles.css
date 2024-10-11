@@ -1,151 +1,71 @@
 body {
-	margin: 0;
-	background-color: #111111;
-	color: #fff;
+    background-color: #111111;
+    color: white;
 
-	font-family: Arial;
+    font-family: Arial;
 }
 
-#main-aside-wrapper {
-    flex-direction: column;
-    align-items: center;
+/*-----------------------> МЕНЮ ХЕДЕРА <-----------------------*/
+
+#main-header-wrapper {
+	background-color: #008B8B;
+	color: white;
+}
+
+#header-logo {
+	width: 100px;
+}
+
+.navbar-brand {
     display: flex;
+    align-items: center;
+    color: white;
+    font-size: 2.0rem;
+}
+.navbar-brand i {
+    margin-right: 10px;
 }
 
-#marked-list1 {
-	display: inline-block;
-	list-style-type: none;
+.nav-link {
+	color: #fff;
+	font-size: 1.1rem;
+}
+
+#main-content-wrapper {
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
+}
+
+/*-----------------------> СПИСКИ <-----------------------*/
+
+#main-list-wrapper {
+	flex-direction: column;
+	justify-content: center;
+	display: flex;
+
+	order: 2;
+}
+
+.list-group-item {
+	background-color: #19191a;
+	width: 600;
 }
 
 #counted-list1 {
 	display: inline-block;
 }
 
-a {
-	color: #00FFFF;
-}
-
-#header-main-wrapper {
-	justify-content: center;
-	flex-direction: column;
-	display: flex;
-
-	grid-gap: 0px;
-}
-
-#header-title {
-	position: relative;
-	height: 100%;
-	background-color: #008B8B;
-	
-	justify-content: center;
-	align-items: center;
-	display: flex;
-
-	flex: 1;
-	order: 1;
-}
-
-#header-logo {
-	position: relative;
-	width: 100px;
-	flex: 0 0 auto;
-
-	margin-left: 15px;
-}
-
-#header-text {
-	position: realtive;
-	padding-left: 20px;
-
-	a {
-		color: #fff;
-		text-decoration: none;
-	}
-}
-
-#header-menu {
-	position: relative;
-	padding-top: 15px;
-	width: 100%;
-	background-color: #008B8B;
-
-	justify-content: left;
-	align-items: center;
-	display: flex;
-
-	flex: 2;
-	order: 2;
-
-	ul {
-		list-style-type: none;
-		display: inline-flex;
-		flex-direction: column;
-		flex-wrap: wrap;
-		grid-gap: 15px;
-	}
-
-	li {
-		font-size: 1.3rem;
-		margin-right: 0px;
-		padding: 0px;
-	}
-
-	a {
-		color: #fff;
-	}
-}
-
-/*Порядок следования элементов*/
-#list-wrapper {
-	order: 2;
-}
-#table-wrapper {
-	order: 1;
-}
-#form-wrapper {
-	order: 3;
-}
-
-@media screen and (min-width: 964px) {
-	#header-main-wrapper {
-    	flex-direction: row;
-	}
-
-	#header-title {
-		width: 340px;
-		height: 140px;
-
-		#header-logo {
-			margin-top: 0px;
-		}
-	}
-
-	#header-menu {
-		padding-top: 0px;
-		justify-self: center;
-		justify-content: center;
-
-		ul {
-			flex-direction: row;
-			grid-gap: 50px;
-		}
-	}
-
-	#list-wrapper {
-		order: 1
-	}
-	#table-wrapper {
-		order: 2;
-	}
-	#form-wrapper {
-		order: 3;
-	}
-}
+/*-----------------------> ТАБЛИЦА <-----------------------*/
 
 #table-main {
 	border: 1px solid white;
     border-spacing: 1px 1px;
+    color: white;
+}
+
+#table-wrapper {
+	order: 1;
 }
 
 th {
@@ -165,14 +85,20 @@ td {
 	background-color: #1f1f1f;
 }
 
+/*-----------------------> ФОРМА <-----------------------*/
+
+#form-wrapper {
+	order: 3;
+}
+
+/*-----------------------> ПОДВАЛ <-----------------------*/
+
 #footer-main {
-	position: absolute;
 	display: flex;
 	align-items: center;
-
+	
 	width: 100%;
 	height: 80px;
-	padding: 1px;
 	color: #ffff;
 	background-color: #008B8B;
 }
@@ -184,4 +110,21 @@ td {
 
 	color: #fff;
 	text-decoration: none;
+}
+
+/*-----------------------> MEDIA <-----------------------*/
+@media screen and (min-width: 800px) {
+	#main-list-wrapper {
+		order: 1;
+	}
+	#table-wrapper {
+		order: 2;
+	}
+	#form-wrapper {
+		order: 3;
+	}
+
+	#header-logo {
+		justify-self: left;
+	}
 }
