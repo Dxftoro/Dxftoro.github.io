@@ -1,0 +1,14 @@
+<script>
+function onClick(event) {
+  event.preventDefault();
+  alert("click");
+}
+
+window.addEventListener('DOMContentLoaded', function (event) {
+  console.log("DOM fully loaded and parsed");
+  let b = document.getElementById("my-button");
+  b.addEventListener("click", onClick);
+});
+</script>  
+
+<button id="my-button">Кнопка</button>

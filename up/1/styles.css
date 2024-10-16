@@ -37,6 +37,21 @@ body {
 	display: flex;
 }
 
+/*-----------------------> ФОРМА ЗАКАЗА <-----------------------*/
+
+.orderform-result-succes {
+	font-size: 2.0rem;
+	color: cyan;
+}
+.orderform-result-failure {
+	font-size: 1.5rem;
+	color: red;
+}
+
+#orderform-selection {
+	height: 30px;
+}
+
 /*-----------------------> СПИСКИ <-----------------------*/
 
 #main-list-wrapper {

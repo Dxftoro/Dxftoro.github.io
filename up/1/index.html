@@ -45,8 +45,30 @@
     </div id="main-header-wrapper">
 </header>
 
-<body> 
+<body>
+    <script src="orderform.js"></script>
     <div class="container mt-5" id="main-content-wrapper">
+        <div id="orderform-wrapper">
+            <h2>ЗАКАЗАТЬ РЫБУ</h2>
+
+            Товар:
+            <select name="items" id="orderform-selection">
+                <option value="Минтай">Минтай</option>
+                <option value="Горбуша">Горбуша</option>
+                <option value="Корюшка">Корюшка</option>
+                <option value="Треска">Треска</option>
+                <option value="Тунец">Тунец</option>
+                <option value="Мойва">Мойва</option>
+                <option value="Скумбрия">Скумбрия</option>
+            </select>
+
+            <input name="count" id="orderform-input" type="text" min="1" placeholder="Количество"></input>
+            <button id="orderform-button">Заказать</button>
+            <div class="" id="orderform-result"></div>
+
+            <br /><br /><br />
+        </div>
+
         <div id="main-list-wrapper">
             <h2 class="text-center">Список гиперссылок:</h2>
 
@@ -226,9 +248,10 @@
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <!--script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="orderform.js"></script-->
 </body>
 
 <footer class="bottom">
