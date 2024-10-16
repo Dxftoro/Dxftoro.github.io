@@ -23,8 +23,9 @@ function doOrder() {
 	}
 	else {
 		result.className = "orderform-result-failure";
-		result.innerHTML = "<br /><strong>Поле ввода количества должно содержать только цифры!</strong>";
+		result.innerHTML = "<br /><strong>Поле ввода количества не должно содержать буквы, отрицательные значения или быть пустым!</strong>";
 	}
+
 	return false;
 }
 
