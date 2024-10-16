@@ -49,7 +49,14 @@ body {
 }
 
 #orderform-selection {
+	background-color: white;
+	color: black;
 	height: 30px;
+}
+
+#orderform-input {
+	background-color: white;
+	color: black;
 }
 
 /*-----------------------> СПИСКИ <-----------------------*/
