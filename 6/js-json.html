@@ -1,0 +1,25 @@
+<script>
+// JSON задает объект JavaScript перечислением полей и значений.
+// Может содержать вложенные массивы и объекты.
+let params = {
+  "param1": "value1",
+  "param2": "value2",
+  "numParam": 100,
+  "myArrayParam": [
+    1, 2, 3,
+    "string",
+    {"obj": []}
+  ]
+};
+
+console.log(params);
+
+
+// Из баз данных или по сети получаем JSON обычно в виде строки и десериализуем с помощью метода JSON.parse()
+let stringParams = '[{"sku": "0001", "price": 100, "title": "Красная кружка"}, {"sku": "0002", "price": 200, "title": "Синяя футболка"}]';
+params = JSON.parse(stringParams);
+console.log(params);
+// Распечатываем данные первого товара.
+console.log(params[0]);
+</script>
+ 

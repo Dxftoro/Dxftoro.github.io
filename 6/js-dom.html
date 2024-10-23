@@ -1,0 +1,42 @@
+<div id="mydiv">Первоначальный текст.</div>
+
+<script>
+// Ищем в DOM элемент с идентификатором mydiv
+// и сохраняем ссылку на него в переменную mydiv.
+var mydiv = document.getElementById("mydiv");
+
+// Меняем свойство CSS background-color.
+// Дефис заменяем на Camel Case.
+mydiv.style.backgroundColor = "gray";
+
+// Меняем внутреннее содержимое элемента.
+mydiv.innerHTML = "Новый контент <strong>заменит</strong> старый.";
+
+// Создаем новый элемент.
+var div = document.createElement("div");
+div.classList.add("my-new-div");
+div.innerHTML = "Первый новый элемент.";
+// Вставляем его как последний дочерний элемент существующего.
+mydiv.appendChild(div);
+// Создаем новый элемент.
+var div2 = document.createElement("div");
+div.classList.add("my-new-div");
+div2.innerHTML = "Втрой новый элемент.";
+// Вставляем div2 как дочерний элемент mydiv до div.
+mydiv.insertBefore(div2, div);
+// Удаляем элемент.
+div.remove();
+
+// Добавляем радиокнопку.
+var radio = document.createElement("input");
+radio.type = "radio";
+radio.value = "r1";
+radio.name = "n1";
+// Оборачиваем ее в label.
+var label = document.createElement("label");
+label.appendChild(radio);
+mydiv.appendChild(label);
+label.innerHTML += "радиокнопка";
+
+</script>
+ 

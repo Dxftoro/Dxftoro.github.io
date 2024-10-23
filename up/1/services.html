@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ЗАДАНИЕ 6 Услуги</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_services.css">
+</head>
+
+<header>
+    <div id="main-header-wrapper">
+    <nav class="navbar navbar-expand-lg">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/000/450/342/small_2x/Food__2814_29.jpg" id="header-logo" alt="logo">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-home"></i>Mintay Corporation
+        </a>
+        <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html" title="Эта же страница">Главная</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="./services.html" title="Ссылка 1">Услуги</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="http://kubsu.ru" title="КубГУ" target="_blank">КубГУ</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="other/test.html" title="Ссылка 2" target="_blank">Ссылка 2</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../../extern.html" title="Ссылка 3" target="_blank">Ссылка 3</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    </div id="main-header-wrapper">
+</header>
+
+<body>
+    <script src="services_main.js"></script>
+
+    <div class="container mt-5" id="main-content-wrapper">
+        <div id="services-wrapper">
+            <h2>КАЛЬКУЛЯТОР УСЛУГ</h2>
+
+            Количество:
+            <input name="count" id="services-input-count" type="number" min="0" placeholder="Количество"></input>
+
+            <div class="mb-3" id="services-radios">
+                Услуги:<br />
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        Услуга 1
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Услуга 2
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        Услуга 3
+                    </label>
+                </div>
+            </div>
+
+            <div id="selection-wrapper">
+                Товар:
+                <select name="items" id="orderform-selection">
+                </select><br /><br />
+            </div>
+
+            <div id="checkbox-wrapper">
+                Свойство:
+                <input type="checkbox" name="check" id="services-checkbox">
+            </div>
+
+            <div class="" id="services-result"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+<footer class="bottom">
+    <div id="services-footer-main">
+        <a id="footer-text" href="#main-header-wrapper"></a>
+    </div>
+</footer>
+
+</html>

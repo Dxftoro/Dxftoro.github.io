@@ -1,0 +1,41 @@
+<script>
+window.addEventListener('DOMContentLoaded', function (event) {
+  let s = document.getElementsByName("myselect");
+  s[0].addEventListener("change", function(event) {
+    let select = event.target;
+    let radios = document.getElementById("myradios");
+    console.log(select.value);
+    // Можно использовать getElementsByClassName()
+    if (select.value == "3") {
+      radios.style.display = "none";
+    }
+    else {
+      radios.style.display = "block";
+    }
+  });
+  
+  let r = document.querySelectorAll(".myradios input[type=radio]");
+  r.forEach(function(radio) {
+    radio.addEventListener("change", function(event) {
+      let r = event.target;
+      console.log(r.value);
+    });    
+  });
+  
+});
+</script>  
+
+<form>
+  <select name="myselect">
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select>
+  
+  <div class="myradios" id="myradios">
+    <label><input type="radio" name="myradio" value="r1">R1</label>
+    <label><input type="radio" name="myradio" value="r2">R2</label>
+    <label><input type="radio" name="myradio" value="r3">R3</label>
+  </div>  
+  
+</form>
