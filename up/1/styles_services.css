@@ -5,6 +5,11 @@
 	display: none;
 }
 
+#services-input-count {
+	background-color: white;
+	color: black;
+}
+
 #services-footer-main {
 	display: flex;
 	align-items: center;
