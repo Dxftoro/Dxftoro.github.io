@@ -28,6 +28,17 @@ function setToMobile() {
     $(".gallery-wrapper").css("transform", `translateX(-${translation}px)`);
 }
 
+window.addEventListener("DOMContentLoaded", function(event){
+    slideWidth = $(".gallery-slide img").width() * countMobile;
+    totalImages = $(".gallery-slide img").length;
+    totalPages = Math.ceil(totalImages / 1);
+    let windowWidth = $(window).width();
+    if (windowWidth >= 800) setToDesktop();
+    else setToMobile();
+
+    console.log("DOM loaded!");
+});
+
 $(document).ready(function() {
     slideWidth = $(".gallery-slide img").width() * countMobile;
     totalImages = $(".gallery-slide img").length;
