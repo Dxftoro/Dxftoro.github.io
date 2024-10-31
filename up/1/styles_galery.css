@@ -1,0 +1,46 @@
+.gallery {
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding-left: 50%;
+}
+
+.gallery-slide {
+    display: flex;
+}
+
+.gallery-slide img {
+    padding: 5px;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.pager {
+    text-align: center;
+    font-size: 18px;
+}

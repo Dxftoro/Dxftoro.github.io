@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ЗАДАНИЕ 7 Услуги</title>
+    <title>ЗАДАНИЕ 7 Галерея</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="styles_services.css">
+    <link rel="stylesheet" href="styles_galery.css">
+    <!--link rel="stylesheet" href="styles_services.css"-->
 </head>
 
 <header>
@@ -47,61 +48,34 @@
 </header>
 
 <body>
-    <script src="services_main.js"></script>
-
-    <div class="container mt-5" id="main-content-wrapper">
-        <div id="services-wrapper">
-            <h2>КАЛЬКУЛЯТОР УСЛУГ</h2>
-
-            Количество:
-            <input name="count" id="services-input-count" type="number" min="0" placeholder="Количество"></input>
-
-            <div class="mb-3" id="services-radios">
-                Услуги:<br />
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                    <label class="form-check-label" for="flexRadioDefault1">
-                        Услуга 1
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
-                    <label class="form-check-label" for="flexRadioDefault2">
-                        Услуга 2
-                    </label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
-                    <label class="form-check-label" for="flexRadioDefault3">
-                        Услуга 3
-                    </label>
+    <div class="container mt-5">
+        <div class="gallery">
+            <div class="arrow left-arrow">
+                <span>&#10094;</span>
+            </div>
+            <div class="gallery-wrapper">
+                <div class="gallery-slide">
+                    <img src="https://calorizator.ru/sites/default/files/imagecache/product_512/product/pollack-1.jpg" alt="Изображение">
+                    <img src="https://cdn.tveda.ru/thumbs/066/066768119814691aa2e0f6b1078d182b/84efa4aedbc9b71ac29b3811282d0728.jpg" alt="Изображение">
+                    <img src="https://www.positive-market.ru/-/f/store/offers/1000x1000q80s/1jwd38iddas8uzh7.jpg" alt="Изображение">
+                    <img src="https://kachestvorb.ru/upload/iblock/4b8/4b8a5bb3cb2c5f94deb0c6ce8a55a583.jpg" alt="Изображение">
+                    <img src="https://barboss-etalon.ru/thumb/2/C7Y2gF6o2t4Sg30ntdRtyA/r/d/kambala.jpg" alt="Изображение">
+                    <img src="https://vodovoz.ru/upload/iblock/45d/45d01c0a75b9f02424b9f8db3a977f33.jpeg" alt="Изображение">
                 </div>
             </div>
-
-            <div id="selection-wrapper">
-                Товар:
-                <select name="items" id="orderform-selection">
-                </select><br />
+            <div class="arrow right-arrow">
+                <span>&#10095;</span>
             </div>
-
-            <div id="checkbox-wrapper">
-                Свойство:
-                <input type="checkbox" name="check" id="services-checkbox">
-            </div>
-
-            <div class="" id="services-result"></div>
+        </div>
+        <div class="pager mt-3">
+            <span id="current-page">1</span> / <span id="total-pages">3</span>
         </div>
     </div>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="galery.js"></script>
 </body>
-
-<footer class="bottom">
-    <div id="services-footer-main">
-        <a id="footer-text" href="#main-header-wrapper"></a>
-    </div>
-</footer>
 
 </html>
